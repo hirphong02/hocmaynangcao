@@ -1,0 +1,22 @@
+dự đoán trước xem KH có rời bỏ dịch vụ hay khong? 
+b1: sưu tầm dữ liệu kh rời bỏ và không rời bỏ dịch vụ ở hiện tại
+b2: sưu tầm dữ liệu kh rời bỏ dv tại thời điểm 6 tháng trước.
+b3: tiến hành xây dựng model để dự đoán
+
+dữ liệu lấy trên kagle
+
+- SETUP
+cài đặt và import 1 số thư viện cần thiết
+- Đọc dữ liệu
+state là số bite
+..
+- Xem qua dữ liệu
+xem .info(xem dữ liệu có những trường gì)
+xem .sum(đếm số trường null)
+- Xem qua các trường dữ liệu xem nó phân bố như thế nào
+for ra để xem nó các trường ntn
+- Tiền xử lý dữ liệu để đưa vào model
+trường state có nhiều giá trị nên dùng hasingendcoder(chi tiết thuật toán)
+kq: nó sẽ remove cột state đi thay vào bằng 8 cột hashing
+sau đó get dumy
+
